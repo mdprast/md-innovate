@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Innovate - Inovasi Aplikasi Pendidikan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section { background-color: #f4f7f6; padding: 100px 0 80px; }
+        .app-card { transition: transform 0.3s; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+        .app-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.12); }
+        .btn-custom { background-color: #0d6efd; color: white; border-radius: 30px; padding: 12px 30px; font-weight: 600; }
+        .btn-wa { background-color: #25D366; color: white; border-radius: 30px; padding: 12px 30px; border: none; }
+        .btn-wa:hover { background-color: #128C7E; color: white; }
+        .app-logo { width: 90px; height: 90px; object-fit: contain; }
+        .brand-logo { height: 45px; object-fit: contain; background: white; padding: 2px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="logo MD innovate small.png" alt="MD Innovate Logo" class="brand-logo me-2">
+                <span class="d-none d-sm-inline">MD Innovate</span>
+            </a>
+            <a href="https://wa.me/6285189603539" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
+                <i class="fab fa-whatsapp me-1"></i> Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-primary mb-3 mt-4">Inovasi Pendidikan di Genggaman Anda</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 750px;">
+                Membangun ekosistem pembelajaran yang lebih modern, efisien, dan memotivasi. Kami mengembangkan aplikasi Android interaktif untuk memperkuat kemampuan siswa dan mempermudah tugas guru.
+            </p>
+            <a href="#apps" class="btn btn-custom mt-4 shadow-sm">Jelajahi Aplikasi Kami</a>
+        </div>
+    </section>
+
+    <!-- App Catalog Section -->
+    <section id="apps" class="container py-5">
+        <div class="row g-5 justify-content-center">
+            
+            <!-- App 1: Mahir Hitung Pro -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="logo mahir hitung pro.webp" alt="Logo Mahir Hitung Pro" class="app-logo mb-3 drop-shadow">
+                            <h3 class="card-title fw-bold text-dark">Mahir Hitung Pro</h3>
+                            <span class="badge bg-success px-3 py-2 rounded-pill"><i class="fas fa-check-circle me-1"></i>Tersedia di Play Store</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-4">
+                            Merubah stigma matematika menjadi menyenangkan bagi siswa SD & SMP. Memperkuat kemampuan dasar melalui metode terstruktur dan sistem penghargaan.
+                        </p>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold text-primary mb-2">Keunggulan Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.95rem;">
+                                <li class="mb-2"><strong>Metode Drill & Ruang Trofi:</strong> Latihan komprehensif berulang dengan 36 lencana prestasi untuk memotivasi siswa.</li>
+                                <li class="mb-2"><strong>Manajemen Kelas Guru:</strong> Asisten digital untuk membuat kelas virtual, memantau riwayat skor, dan evaluasi real-time.</li>
+                                <li class="mb-2"><strong>Performa Ringan:</strong> Dibangun dengan Jetpack Compose, super lancar untuk semua spesifikasi perangkat.</li>
+                                <li><strong>Privasi Aman:</strong> Data tersinkronisasi di Cloud, hanya mengambil data esensial edukasi tanpa pihak ketiga.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto">
+                            <a href="https://play.google.com/store/apps/details?id=com.mdedu.matdasar&hl=id" target="_blank" class="btn btn-primary w-100 fw-bold rounded-pill py-2 shadow-sm">
+                                <i class="fab fa-google-play me-2"></i>Unduh Mahir Hitung Pro
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 2: ExamifyPDF -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="icon_logo 512.png" alt="Logo ExamifyPDF" class="app-logo mb-3" style="border-radius: 20px;">
+                            <h3 class="card-title fw-bold text-dark">ExamifyPDF</h3>
+                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill"><i class="fas fa-clock me-1"></i>Proses Rilis (Coming Soon)</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-4">
+                            Aplikasi ujian digital praktis tanpa registrasi akun. Sangat ringan, aman, dan dirancang khusus agar siswa fokus sepenuhnya pada lembar ujian.
+                        </p>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold text-primary mb-2">Keunggulan Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.95rem;">
+                                <li class="mb-2"><strong>Akses Tanpa Akun:</strong> Siswa langsung masuk ruang ujian menggunakan Nama, Token, dan PIN dari guru.</li>
+                                <li class="mb-2"><strong>Aman & Terfokus:</strong> Desain antarmuka sederhana yang mencegah distraksi selama pengerjaan soal.</li>
+                                <li class="mb-2"><strong>Koneksi Cepat:</strong> Terintegrasi secara real-time dengan server guru untuk pengiriman jawaban yang terjamin.</li>
+                                <li><strong>Portal Web Khusus Guru:</strong> Akses gratis via browser untuk unggah PDF, kelola jadwal, dan buat Token/PIN.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-3">
+                            <button class="btn btn-secondary fw-bold rounded-pill py-2" disabled>
+                                <i class="fab fa-google-play me-2"></i>Segera Hadir di Play Store
+                            </button>
+                            <a href="https://examifypdf.md-innovate.my.id" target="_blank" class="btn btn-outline-primary fw-bold rounded-pill py-2">
+                                <i class="fas fa-chalkboard-teacher me-2"></i>Akses Portal Guru (Web Admin)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5 mt-4">
+        <div class="container">
+            <img src="logo MD innovate small.png" alt="MD Innovate" class="brand-logo mb-3 opacity-75">
+            <h5 class="fw-bold mb-3">MD Innovate</h5>
+            <p class="text-light opacity-75 mb-4 max-w-50 mx-auto">Mendukung digitalisasi pendidikan di Indonesia melalui teknologi yang merata, modern, dan mudah diakses.</p>
+            
+            <a href="https://wa.me/6285189603539" target="_blank" class="btn btn-wa fw-bold mb-4 shadow-sm">
+                <i class="fab fa-whatsapp fs-5 me-2 align-middle"></i> WhatsApp: +62 851-8960-3539
+            </a>
+
+            <div class="pt-4 border-top border-secondary">
+                <small class="text-light opacity-50">&copy; 2026 MD Innovate. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
