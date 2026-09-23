@@ -16,8 +16,9 @@
         .btn-custom { background-color: #0d6efd; color: white; border-radius: 30px; padding: 12px 30px; font-weight: 600; }
         .btn-wa { background-color: #25D366; color: white; border-radius: 30px; padding: 12px 30px; border: none; }
         .btn-wa:hover { background-color: #128C7E; color: white; }
-        .app-logo { width: 90px; height: 90px; object-fit: contain; }
+        .app-logo { width: 90px; height: 90px; object-fit: cover; }
         .brand-logo { height: 45px; object-fit: contain; background: white; padding: 2px; border-radius: 5px; }
+        .tag-badge { font-size: 0.75rem; background-color: #e9ecef; color: #6c757d; border: 1px solid #dee2e6; }
     </style>
 </head>
 <body>
@@ -26,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                <img src="logo_md_innovate.webp" alt="MD Innovate Logo" class="brand-logo me-2">
+                <img src="logo MD innovate small.png" alt="MD Innovate Logo" class="brand-logo me-2">
                 <span class="d-none d-sm-inline">MD Innovate</span>
             </a>
             <a href="https://wa.me/6285189603539" target="_blank" class="btn btn-outline-light btn-sm rounded-pill px-3">
@@ -48,20 +49,36 @@
 
     <!-- App Catalog Section -->
     <section id="apps" class="container py-5">
-        <div class="row g-4 justify-content-center">
+        
+        <!-- Filter Buttons -->
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
+            <button class="btn btn-primary rounded-pill px-4 filter-btn" data-filter="all">Semua</button>
+            <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="matematika">Matematika</button>
+            <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="android">Android</button>
+            <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="web">Web App</button>
+            <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="ifp">IFP</button>
+            <button class="btn btn-outline-primary rounded-pill px-4 filter-btn" data-filter="game">Game</button>
+        </div>
+
+        <div class="row g-4 justify-content-center" id="app-container">
             
             <!-- App 1: Mahir Hitung Pro -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 app-item" data-tags="android matematika">
                 <div class="card app-card h-100 border-0 bg-white">
                     <div class="card-body p-4 d-flex flex-column">
                         <div class="text-center mb-4">
-                            <img src="logo_mahir_hitung_pro.webp" alt="Logo Mahir Hitung Pro" class="app-logo mb-3 drop-shadow">
+                            <img src="logo mahir hitung pro.webp" alt="Logo Mahir Hitung Pro" class="app-logo mb-3 drop-shadow rounded-4">
                             <h4 class="card-title fw-bold text-dark">Mahir Hitung Pro</h4>
                             <span class="badge bg-success px-3 py-2 rounded-pill"><i class="fas fa-check-circle me-1"></i>Play Store</span>
                         </div>
-                        <p class="card-text text-muted text-center mb-4" style="font-size: 0.9rem;">
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
                             Merubah stigma matematika menjadi menyenangkan bagi siswa SD & SMP. Memperkuat kemampuan dasar melalui metode terstruktur dan sistem penghargaan.
                         </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#Android</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
                         
                         <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
                             <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;">Keunggulan Fitur:</h6>
@@ -74,7 +91,7 @@
                         </div>
 
                         <div class="mt-auto">
-                            <a href="https://play.google.com/store/apps/details?id=com.mdedu.matdasar&hl=id" target="_blank" class="btn btn-primary w-100 fw-bold rounded-pill py-2 shadow-sm">
+                            <a href="https://play.google.com/store/apps/details?id=com.mdedu.matdasar&hl=id" target="_blank" class="btn btn-primary w-100 fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem;">
                                 <i class="fab fa-google-play me-2"></i>Unduh App
                             </a>
                         </div>
@@ -83,22 +100,27 @@
             </div>
 
             <!-- App 2: ExamifyPDF -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 app-item" data-tags="android web">
                 <div class="card app-card h-100 border-0 bg-white">
                     <div class="card-body p-4 d-flex flex-column">
                         <div class="text-center mb-4">
-                            <img src="logo_examify.webp" alt="Logo ExamifyPDF" class="app-logo mb-3" style="border-radius: 20px;">
+                            <img src="icon_logo 512.png" alt="Logo ExamifyPDF" class="app-logo mb-3" style="border-radius: 20px;">
                             <h4 class="card-title fw-bold text-dark">ExamifyPDF</h4>
                             <span class="badge bg-warning text-dark px-3 py-2 rounded-pill"><i class="fas fa-clock me-1"></i>Coming Soon</span>
                         </div>
-                        <p class="card-text text-muted text-center mb-4" style="font-size: 0.9rem;">
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
                             Aplikasi ujian digital praktis tanpa registrasi akun. Sangat ringan, aman, dan dirancang khusus agar siswa fokus sepenuhnya pada lembar ujian.
                         </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#Android</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#WebApp</span>
+                        </div>
                         
                         <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
                             <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;">Keunggulan Fitur:</h6>
                             <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
-                                <li class="mb-2"><strong>Akses Tanpa Akun</strong></li>
+                                <li class="mb-2"><strong>Akses Tanpa Akun:</strong> Masuk dengan Token & PIN</li>
                                 <li class="mb-2"><strong>Aman & Terfokus</strong></li>
                                 <li class="mb-2"><strong>Koneksi Cepat Real-time</strong></li>
                                 <li><strong>Portal Web Khusus Guru</strong></li>
@@ -118,18 +140,23 @@
             </div>
 
             <!-- App 3: Simulasi Bangun Ruang -->
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika">
                 <div class="card app-card h-100 border-0 bg-white">
                     <div class="card-body p-4 d-flex flex-column">
                         <div class="text-center mb-4">
-                            <!-- Siapkan gambar logo untuk simulasi, misal namanya logo_simulasi.webp -->
-                            <img src="logo_simulasi.png" alt="Logo Simulasi" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <img src="watermarked_img_13913204196202833316.jpg" alt="Logo Simulasi 3D" class="app-logo mb-3 rounded-circle shadow-sm">
                             <h4 class="card-title fw-bold text-dark">Simulasi 3D</h4>
                             <span class="badge bg-info text-dark px-3 py-2 rounded-pill"><i class="fas fa-cube me-1"></i>Web Based</span>
                         </div>
-                        <p class="card-text text-muted text-center mb-4" style="font-size: 0.9rem;">
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
                             Simulasi bangun ruang sisi datar dan sisi lengkung. Lengkap dengan animasi jaring-jaring presisi, visualisasi 3D, dan perhitungan otomatis.
                         </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
                         
                         <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
                             <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;">Highlight Fitur:</h6>
@@ -153,13 +180,136 @@
                 </div>
             </div>
 
+            <!-- App 4: Simulasi Pythagoras (PythaLab) -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="https://via.placeholder.com/90/198754/ffffff?text=Pytha" alt="Logo Simulasi Pythagoras" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">PythaLab</h4>
+                            <span class="badge bg-success px-3 py-2 rounded-pill"><i class="fas fa-square-root-alt me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Laboratorium & pembelajaran interaktif Teorema Pythagoras. Mengubah rumus abstrak menjadi pengalaman visual nyata yang dapat dimanipulasi.
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>Konsep & Pembuktian Visual</strong></li>
+                                <li class="mb-2"><strong>Kanvas Interaktif (Zoom & Geser)</strong></li>
+                                <li class="mb-2"><strong>Kalkulator Langkah demi Langkah</strong></li>
+                                <li><strong>Kuis & Latihan Soal Adaptif</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn btn-outline-success fw-bold rounded-pill py-2" style="font-size: 0.85rem;" data-bs-toggle="modal" data-bs-target="#modalPythagoras">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://sim-pythagoras.md-innovate.my.id" target="_blank" class="btn btn-success fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem;">
+                                <i class="fas fa-external-link-alt me-2"></i>Akses Simulasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 5: Simulasi Dimensi Tiga -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="https://via.placeholder.com/90/6f42c1/ffffff?text=Dimensi+3" alt="Logo Dimensi Tiga" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">Simulasi Dimensi Tiga</h4>
+                            <span class="badge px-3 py-2 rounded-pill" style="background-color: #6f42c1; color: white;"><i class="fas fa-cubes me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Media pembelajaran visual 3D untuk menaklukkan materi Geometri Ruang. Dilengkapi panduan perhitungan jarak dan sudut secara terstruktur.
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;" style="color: #6f42c1 !important;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>Kanvas 3D Interaktif & Rotasi Bebas</strong></li>
+                                <li class="mb-2"><strong>Diagram Segitiga Pembantu 2D</strong></li>
+                                <li class="mb-2"><strong>Panduan Solusi Bertahap</strong></li>
+                                <li><strong>Bank Kasus Bangun Ruang Terlengkap</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn fw-bold rounded-pill py-2" style="font-size: 0.85rem; border-color: #6f42c1; color: #6f42c1;" data-bs-toggle="modal" data-bs-target="#modalDimensiTiga" onmouseover="this.style.backgroundColor='#6f42c1'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#6f42c1';">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://sim-dimensi3.md-innovate.my.id/" target="_blank" class="btn fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem; background-color: #6f42c1; color: white;">
+                                <i class="fas fa-external-link-alt me-2"></i>Akses Simulasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 6: Air Force 1945 -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp game">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="https://via.placeholder.com/90/dc3545/ffffff?text=1945" alt="Logo Air Force 1945" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">Air Force 1945</h4>
+                            <span class="badge bg-danger px-3 py-2 rounded-pill"><i class="fas fa-gamepad me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Game arcade tembak pesawat klasik bertema Perang Dunia II dalam mode Multiplayer Split-Screen 1 layar. Adu kelincahan dan strategi!
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Game</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold text-danger mb-2" style="font-size: 0.9rem;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>Dual Multiplayer di Satu Layar</strong></li>
+                                <li class="mb-2"><strong>Kontrol Sentuh & Keyboard</strong></li>
+                                <li class="mb-2"><strong>Pertarungan Bos Epik & 10 Level</strong></li>
+                                <li><strong>Sistem Upgrade Senjata & Mega Bom</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn btn-outline-danger fw-bold rounded-pill py-2" style="font-size: 0.85rem;" data-bs-toggle="modal" data-bs-target="#modalAirForce">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://gim-airforce.md-innovate.my.id/" target="_blank" class="btn btn-danger fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem;">
+                                <i class="fas fa-external-link-alt me-2"></i>Mainkan Game
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-5 mt-4">
         <div class="container">
-            <img src="logo_md_innovate.webp" alt="MD Innovate" class="brand-logo mb-3 opacity-75">
+            <img src="logo MD innovate small.png" alt="MD Innovate" class="brand-logo mb-3 opacity-75">
             <h5 class="fw-bold mb-3">MD Innovate</h5>
             <p class="text-light opacity-75 mb-4 max-w-50 mx-auto">Mendukung digitalisasi pendidikan di Indonesia melalui teknologi yang merata, modern, dan mudah diakses.</p>
             
@@ -173,7 +323,7 @@
         </div>
     </footer>
 
-    <!-- MODAL DESKRIPSI PENUH SIMULASI BANGUN RUANG -->
+    <!-- MODAL 1: DESKRIPSI PENUH SIMULASI BANGUN RUANG -->
     <div class="modal fade" id="modalSimulasi" tabindex="-1" aria-labelledby="modalSimulasiLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 rounded-4 shadow-lg">
@@ -182,67 +332,43 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-4 p-md-5">
-            
             <div class="mb-4">
                 <h6 class="fw-bold text-primary">1. Visualisasi 3D Interaktif & Real-Time (Three.js Engine)</h6>
                 <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li><strong>Navigasi 360 Derajat Bebas:</strong> Pengguna dapat memutar (orbit/rotate), menggeser (pan), dan memperbesar/memperkecil (zoom) sudut pandang tanpa batas.</li>
-                    <li><strong>Preset Sudut Kamera Cepat:</strong> Tombol sekali klik untuk melihat objek dari sudut pandang Prespektif, Atas (Top View), Depan (Front View), dan Samping (Side View).</li>
-                    <li><strong>Rotasi Otomatis (Auto-Rotate):</strong> Menampilkan model yang berputar perlahan secara otomatis untuk presentasi visual.</li>
-                    <li><strong>3 Mode Tampilan Visual:</strong> Solid Shaded (pencahayaan dinamis), Transparan/X-Ray (melihat bagian dalam), dan Wireframe (menampilkan kerangka rusuk).</li>
+                    <li><strong>Navigasi 360 Derajat Bebas:</strong> Pengguna dapat memutar, menggeser, dan memperbesar sudut pandang tanpa batas.</li>
+                    <li><strong>Preset Sudut Kamera Cepat:</strong> Tombol sekali klik untuk tampilan Prespektif, Atas, Depan, dan Samping.</li>
+                    <li><strong>Rotasi Otomatis:</strong> Model berputar otomatis untuk presentasi visual interaktif.</li>
+                    <li><strong>3 Mode Tampilan Visual:</strong> Solid Shaded, Transparan (X-Ray), dan Wireframe.</li>
                 </ul>
             </div>
-
             <div class="mb-4">
                 <h6 class="fw-bold text-primary">2. Simulasi Animasi Jaring-Jaring Kinematis Presisi</h6>
                 <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li><strong>Transisi Halus:</strong> Membuka dan melipat kembali bangun ruang 3D menjadi jaring-jaring 2D secara mulus melalui slider (0% – 100%).</li>
-                    <li><strong>Playback Otomatis & Kontrol:</strong> Play/Pause, Pengaturan kecepatan (0.5x - 2x), dan Opsi Loop.</li>
-                    <li><strong>Kinematika Akurat:</strong> Animasi spesifik untuk Tabung (selimut membuka isometrik, alas/tutup berputar 90°), Kubus (mendukung banyak pola jaring-jaring standar), serta Balok, Prisma, Kerucut, & Limas.</li>
+                    <li><strong>Transisi Halus:</strong> Membuka dan melipat jaring-jaring secara mulus melalui slider (0% – 100%).</li>
+                    <li><strong>Playback Otomatis:</strong> Play/Pause, kecepatan animasi (0.5x - 2x), opsi Loop.</li>
+                    <li><strong>Kinematika Akurat:</strong> Mendukung Tabung, Kubus, Balok, Prisma, Kerucut, & Limas.</li>
                 </ul>
             </div>
-
             <div class="mb-4">
                 <h6 class="fw-bold text-primary">3. Kustomisasi Dimensi & Ukuran Bangun Ruang</h6>
                 <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li><strong>Pengaturan Ukuran Dinamis:</strong> Ubah panjang, lebar, tinggi, jari-jari, hingga jumlah segi alas secara bebas menggunakan slider interaktif.</li>
-                    <li><strong>Kalkulasi Matematis Otomatis:</strong> Langsung menghitung ulang secara seketika Luas Permukaan Total, Volume Bangun Ruang, serta Keliling Alas & Panjang Kerangka.</li>
+                    <li><strong>Pengaturan Ukuran Dinamis:</strong> Ubah parameter panjang, lebar, tinggi, jari-jari.</li>
+                    <li><strong>Kalkulasi Matematis Otomatis:</strong> Instant recalculation untuk Luas Permukaan dan Volume.</li>
                 </ul>
             </div>
-
             <div class="mb-4">
                 <h6 class="fw-bold text-primary">4. Panduan Anatomi Geometris & Dimensi</h6>
                 <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li><strong>Garis Dimensi & Ukuran Nyata:</strong> Menampilkan label ukuran dan garis panduan langsung pada model 3D maupun jaring-jaring 2D.</li>
-                    <li><strong>Penanda Titik Sudut:</strong> Menandai setiap simpul dengan bola warna kontras.</li>
-                    <li><strong>Pembedaan Warna Komponen:</strong> Hijau untuk Alas, Biru untuk Tutup, Amber untuk Selimut/Sisi Tegak, dan Merah untuk Garis Tinggi Internal.</li>
+                    <li>Garis dimensi nyata, penanda titik sudut, dan pembedaan warna komponen yang konsisten.</li>
                 </ul>
             </div>
-
             <div class="mb-4">
-                <h6 class="fw-bold text-primary">5. Rangkuman Materi Edukasi & Rumus Lengkap</h6>
+                <h6 class="fw-bold text-primary">5. Kuis & Evaluasi Serta Keunggulan Teknis</h6>
                 <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li>Menampilkan rincian jumlah sisi, rusuk, dan titik sudut.</li>
-                    <li>Panduan langkah demi langkah menemukan rumus luas permukaan dari jaring-jaring serta rumus volume lengkap.</li>
+                    <li>Kuis pilihan ganda dengan umpan balik langsung.</li>
+                    <li>100% Client-Side (Offline Ready) dan Multi-Platform.</li>
                 </ul>
             </div>
-
-            <div class="mb-4">
-                <h6 class="fw-bold text-primary">6. Kuis & Evaluasi Pemahaman Interaktif</h6>
-                <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li>Soal kuis pilihan ganda interaktif seputar pola jaring-jaring, sifat bangun ruang, perhitungan luas dan volume.</li>
-                    <li>Umpan balik langsung (Instant Feedback) beserta pembahasan penyelesaian.</li>
-                </ul>
-            </div>
-
-            <div class="mb-0">
-                <h6 class="fw-bold text-primary">7. Keunggulan Arsitektur & Teknologi</h6>
-                <ul class="text-muted" style="font-size: 0.95rem;">
-                    <li><strong>100% Client-Side (Offline Ready):</strong> Tidak memerlukan server backend. Ringan, cepat, dan aman.</li>
-                    <li><strong>Multi-Platform:</strong> Berjalan mulus di layar laptop, desktop, tablet, maupun smartphone.</li>
-                </ul>
-            </div>
-
           </div>
           <div class="modal-footer bg-light border-0">
             <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
@@ -254,7 +380,278 @@
       </div>
     </div>
 
+    <!-- MODAL 2: DESKRIPSI PENUH SIMULASI PYTHAGORAS -->
+    <div class="modal fade" id="modalPythagoras" tabindex="-1" aria-labelledby="modalPythagorasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header bg-success text-white border-0">
+            <h5 class="modal-title fw-bold" id="modalPythagorasLabel"><i class="fas fa-square-root-alt me-2"></i>Fitur Lengkap PythaLab</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">Aplikasi web edukasi matematika modern berbasis visual dan simulasi interaktif yang dirancang untuk membuktikan Teorema Pythagoras tanpa menghafal rumus secara buta.</p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold text-success">1. Tab Konsep & Pembuktian Visual</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Pembuktian Bertahap:</strong> Animasi 4 tahap penggabungan luas bidang persegi, lengkap dengan kontrol presentasi.</li>
+                    <li><strong>Eksplorasi Grid Satuan:</strong> Kotak grid dinamis dengan tombol penomoran luas.</li>
+                    <li><strong>Uji Kebalikan Pythagoras:</strong> Deteksi langsung jenis Segitiga Lancip, Siku-siku, atau Tumpul.</li>
+                    <li><strong>Segitiga Sudut Istimewa:</strong> Visualisasi perbandingan rasio dengan nilai akar eksak.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h6 class="fw-bold text-success">2. Fitur Kanvas Interaktif: Zoom, Pinch & Geser (Pan)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Pinch-to-Zoom:</strong> Perbesar kanvas bebas dengan cubit dua jari (di HP/Tablet).</li>
+                    <li><strong>Geser Kanvas (Pan & Drag):</strong> Meneliti detail sudut dan kotak tanpa batas.</li>
+                    <li><strong>Reset Cepat:</strong> Tombol pengembalian ukuran normal sekali klik.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h6 class="fw-bold text-success">3. Tab Simulasi & Kalkulator Langkah demi Langkah</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Simulasi Dinamis:</strong> Mode mencari Sisi Miring, Sisi Alas, atau Sisi Tegak menggunakan slider.</li>
+                    <li><strong>Tombol Cepat Tripel Pythagoras:</strong> Pilihan langsung angka-angka populer.</li>
+                    <li><strong>Penjabaran Rumus Rinci:</strong> Substitusi angka, langkah kuadrat, hingga bentuk desimal & penyederhanaan bentuk akar.</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h6 class="fw-bold text-success">4. Tab Kuis & Latihan Soal Adaptif</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Sistem Paket 10 Soal Acak Seimbang:</strong> Diambil dari 35 bank soal meliputi perbandingan, kebalikan pythagoras, dan soal cerita terapan.</li>
+                    <li><strong>Evaluasi Penuh:</strong> Timer, bilah kemajuan (progress bar), serta pembahasan langkah kunci jawaban detail setelah selesai.</li>
+                </ul>
+            </div>
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://sim-pythagoras.md-innovate.my.id" target="_blank" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm">
+                <i class="fas fa-external-link-alt me-2"></i>Akses PythaLab
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3: DESKRIPSI PENUH SIMULASI DIMENSI TIGA -->
+    <div class="modal fade" id="modalDimensiTiga" tabindex="-1" aria-labelledby="modalDimensiTigaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header text-white border-0" style="background-color: #6f42c1;">
+            <h5 class="modal-title fw-bold" id="modalDimensiTigaLabel"><i class="fas fa-cubes me-2"></i>Fitur Lengkap Dimensi Tiga SMA</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">
+                Dirancang menggunakan AI oleh: <strong>MD. Prasojo, M.Pd.</strong><br>
+                Media pembelajaran matematika berbasis web modern untuk membantu siswa SMA kelas 12, guru, maupun pejuang UTBK-SNBT. Aplikasi ini memvisualisasikan objek ruang 3D secara interaktif dan menuntun penyelesaian masalah jarak serta sudut langkah demi langkah menggunakan konsep reduksi ke segitiga siku-siku pembantu.
+            </p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #6f42c1;">1. Kanvas Simulasi 3D Interaktif (Interactive 3D Viewport)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Rotasi Bebas 360° & Zoom:</strong> Navigasi intuitif untuk memutar, menggeser, dan memperbesar sudut pandang.</li>
+                    <li><strong>Sudut Pandang Cepat:</strong> Tombol instan untuk melihat bangun dari arah Depan, Atas, Samping, dan Isometrik.</li>
+                    <li><strong>Visualisasi Penanda Siku-Siku:</strong> Dilengkapi bujur sangkar siku-siku 3D dengan sistem penghindaran tabrakan (smart offset) agar label titik sudut terlihat jelas.</li>
+                    <li><strong>Penyorotan Warna:</strong> Titik sudut aktif, garis proyeksi tegak lurus, dan bidang iris disorot dengan kode warna kontras tinggi.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #6f42c1;">2. Diagram Segitiga Pembantu 2D</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Mengisolasi bidang irisan penting langsung ke diagram 2D berformat SVG presisi tinggi.</li>
+                    <li>Menampilkan keterangan sisi alas, sisi tegak, dan sisi miring.</li>
+                    <li>Dilengkapi kartu rumus Teorema Pythagoras dan rumus perbandingan luas segitiga (1/2 &times; a &times; t) yang relevan.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #6f42c1;">3. Panduan Solusi Bertahap (Step-by-Step)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Alur Perhitungan Sistematis:</strong> Tahapan dari menentukan target, membuat garis pembantu, hingga rumus akhir.</li>
+                    <li><strong>Penyederhanaan Bentuk Akar:</strong> Hasil pecahan dan akar disederhanakan otomatis menjadi hasil eksak.</li>
+                    <li><strong>Kuis Checkpoint:</strong> Pertanyaan interaktif di tiap tahap untuk menguji pemahaman.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #6f42c1;">4. Bank Kasus Bangun Ruang Terlengkap</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Kubus & Balok:</strong> Jarak ke diagonal ruang/bidang, jarak titik ke bidang.</li>
+                    <li><strong>Limas Segiempat & Segitiga:</strong> Jarak titik puncak ke alas, jarak titik alas ke rusuk tegak.</li>
+                    <li><strong>Prisma:</strong> Jarak titik ke bidang tegak dan diagonal sisi.</li>
+                    <li><strong>Besar Sudut Ruang:</strong> Sudut antara garis dengan garis bersilangan, sudut garis dengan bidang, kemiringan dua bidang.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #6f42c1;">5. Fitur Eksplorasi, Evaluasi & Aksesibilitas</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Panel Kontrol Dimensi:</strong> Slider pengubah ukuran rusuk dengan kalkulasi ulang seketika.</li>
+                    <li><strong>Modul Latihan Mandiri:</strong> Kuis interaktif berstandar seleksi masuk PTN dengan verifikasi jawaban.</li>
+                    <li><strong>Rangkuman Teori:</strong> Syarat garis bersilangan dan "Trik Sakti Kubus".</li>
+                    <li><strong>Mode Malam (High-Contrast):</strong> Kanvas pekat dengan grid kontras tinggi untuk belajar di malam hari.</li>
+                    <li><strong>Responsif 100%:</strong> Optimal di Laptop, Tablet, Smartphone tanpa aplikasi tambahan.</li>
+                </ul>
+            </div>
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://sim-dimensi3.md-innovate.my.id/" target="_blank" class="btn rounded-pill px-4 fw-bold shadow-sm" style="background-color: #6f42c1; color: white;">
+                <i class="fas fa-external-link-alt me-2"></i>Akses Dimensi Tiga
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 4: DESKRIPSI PENUH GIM AIR FORCE 1945 (BARU) -->
+    <div class="modal fade" id="modalAirForce" tabindex="-1" aria-labelledby="modalAirForceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header bg-danger text-white border-0">
+            <h5 class="modal-title fw-bold" id="modalAirForceLabel"><i class="fas fa-gamepad me-2"></i>Fitur Lengkap Air Force 1945</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">
+                Air Force 1945: Two-Player Duel menghadirkan kembali sensasi legendaris game shoot 'em up arcade 1945 ke dalam platform web modern. Dirancang khusus untuk dimainkan oleh dua pemain sekaligus di satu perangkat layar yang sama (Laptop layar sentuh, Tablet, iPad, maupun PC/Desktop).
+            </p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold text-danger">1. Dual Multiplayer di Satu Layar (Split-Screen 1v1)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Pemain 1 mengendalikan pesawat tempur di sisi kiri layar.</li>
+                    <li>Pemain 2 mengendalikan pesawat tempur di sisi kanan layar.</li>
+                    <li>Gelombang musuh dan peluang item dibuat 100% adil dan sinkron untuk kedua pemain.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold text-danger">2. Kontrol Sentuh Ergonomis & Dukungan Keyboard</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Layar Sentuh:</strong> Menggunakan teknologi Smart Offset Touch — jari pemain diletakkan di bawah pesawat sehingga visual pesawat dan lintasan peluru tidak tertutup tangan.</li>
+                    <li><strong>Keyboard (PC/Laptop):</strong> Dukungan kontrol WASD untuk Pemain 1 dan Tombol Panah untuk Pemain 2.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold text-danger">3. Pertarungan Bos Epik & Tingkat Level</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Hadapi 10 Bos Pesawat Raksasa (mulai dari BF-109 Baron, Yamato Sky Destroyer, hingga Doomsday Dreadnought).</li>
+                    <li>Level dapat meningkat secara dinamis seiring jalannya waktu pertandingan (Auto Progression).</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold text-danger">4. Sistem Upgrade Senjata & Mega Bom Taktis</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>🌟 <strong>Spread Shot:</strong> Tembakan menyebar 3 arah hingga 5 arah.</li>
+                    <li>⚡ <strong>Rapid Fire:</strong> Kecepatan tembak ekstra cepat.</li>
+                    <li>🔥 <strong>Super Damage:</strong> Daya hancur peluru berlipat ganda (2.5x).</li>
+                    <li>🛡️ <strong>Shield:</strong> Perisai pelindung kebal serangan selama beberapa detik.</li>
+                    <li>💣 <strong>Mega Bomb:</strong> Amunisi bom darurat untuk membersihkan seluruh peluru dan musuh di layar.</li>
+                    <li>💚 <strong>Repair Kit:</strong> Memulihkan daya tahan pesawat (+40 HP).</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold text-danger">5. Keunggulan Sistem & Performa</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Papan Peringkat Global:</strong> Setiap poin, kombo beruntun, dan kemenangan tercatat secara otomatis di papan skor pilot terbaik.</li>
+                    <li><strong>Bebas Lag (60 FPS):</strong> Dibuat menggunakan teknologi Canvas & Web Audio API murni. Dilengkapi opsi pengaturan grafis (Mode Hemat GPU).</li>
+                    <li>Langsung jalan di browser modern tanpa perlu download atau registrasi rumit.</li>
+                </ul>
+            </div>
+
+            <div class="mb-0">
+                <h6 class="fw-bold text-danger mb-3">🎮 Panduan Singkat Cara Bermain</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm text-center align-middle" style="font-size: 0.9rem;">
+                        <thead class="table-danger">
+                            <tr>
+                                <th>Aksi</th>
+                                <th>Pemain 1 (Sisi Kiri)</th>
+                                <th>Pemain 2 (Sisi Kanan)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-muted">
+                            <tr>
+                                <td><strong>Gerakan (Layar Sentuh)</strong></td>
+                                <td>Sentuh & geser di separuh layar kiri</td>
+                                <td>Sentuh & geser di separuh layar kanan</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gerakan (Keyboard)</strong></td>
+                                <td>Tombol W, A, S, D</td>
+                                <td>Tombol Panah ↑, ←, ↓, →</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Menembak</strong></td>
+                                <td>Otomatis (Auto-Fire)</td>
+                                <td>Otomatis (Auto-Fire)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tombol Mega Bom</strong></td>
+                                <td>Ikon Bom Kiri / Tombol Spasi</td>
+                                <td>Ikon Bom Kanan / Tombol Enter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://gim-airforce.md-innovate.my.id/" target="_blank" class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm">
+                <i class="fas fa-external-link-alt me-2"></i>Mainkan Game
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Filter Interaktif -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const appItems = document.querySelectorAll('.app-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update tampilan tombol aktif
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline-primary');
+                    });
+                    button.classList.remove('btn-outline-primary');
+                    button.classList.add('btn-primary');
+
+                    // Ambil nilai kategori yang diklik
+                    const filterValue = button.getAttribute('data-filter');
+
+                    // Filter kartu aplikasi
+                    appItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.style.display = ''; // Munculkan semua
+                        } else {
+                            // Cek apakah data-tags berisi kata kunci filter
+                            if (item.getAttribute('data-tags').includes(filterValue)) {
+                                item.style.display = ''; // Muncul
+                            } else {
+                                item.style.display = 'none'; // Sembunyikan
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
