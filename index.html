@@ -106,7 +106,7 @@
                         <div class="text-center mb-4">
                             <img src="logo_examify.webp" alt="Logo ExamifyPDF" class="app-logo mb-3" style="border-radius: 20px;">
                             <h4 class="card-title fw-bold text-dark">ExamifyPDF</h4>
-                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill"><i class="fas fa-clock me-1"></i>Coming Soon</span>
+                            <span class="badge bg-success px-3 py-2 rounded-pill"><i class="fas fa-check-circle me-1"></i>Play Store</span>
                         </div>
                         <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
                             Aplikasi ujian digital praktis tanpa registrasi akun. Sangat ringan, aman, dan dirancang khusus agar siswa fokus sepenuhnya pada lembar ujian.
@@ -128,9 +128,9 @@
                         </div>
 
                         <div class="mt-auto d-grid gap-2">
-                            <button class="btn btn-secondary fw-bold rounded-pill py-2" style="font-size: 0.85rem;" disabled>
-                                <i class="fab fa-google-play me-2"></i>Segera Hadir
-                            </button>
+                            <a href="https://play.google.com/store/apps/details?id=com.mdedu.examifypdf" target="_blank" class="btn btn-primary fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem;">
+                                <i class="fab fa-google-play me-2"></i>Unduh App
+                            </a>
                             <a href="https://examifypdf.md-innovate.my.id" target="_blank" class="btn btn-outline-primary fw-bold rounded-pill py-2" style="font-size: 0.85rem;">
                                 <i class="fas fa-chalkboard-teacher me-2"></i>Akses Web Admin
                             </a>
@@ -241,7 +241,7 @@
                         </div>
                         
                         <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
-                            <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem;" style="color: #6f42c1 !important;">Highlight Fitur:</h6>
+                            <h6 class="fw-bold text-primary mb-2" style="font-size: 0.9rem; color: #6f42c1 !important;">Highlight Fitur:</h6>
                             <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
                                 <li class="mb-2"><strong>Kanvas 3D Interaktif & Rotasi Bebas</strong></li>
                                 <li class="mb-2"><strong>Diagram Segitiga Pembantu 2D</strong></li>
@@ -262,7 +262,89 @@
                 </div>
             </div>
 
-            <!-- App 6: Air Force 1945 -->
+            <!-- App 6: SimKuadrat Interaktif (Persamaan & Fungsi Kuadrat) -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="logo_simulasi.png" alt="Logo SimKuadrat Interaktif" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">SimKuadrat Interaktif</h4>
+                            <span class="badge px-3 py-2 rounded-pill" style="background-color: #fd7e14; color: white;"><i class="fas fa-chart-line me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Laboratorium virtual fungsi & persamaan kuadrat. Dilengkapi grafik Kartesius smart-snapping, solver langkah demi langkah, dan simulasi nyata.
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem; color: #fd7e14 !important;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>Visualisasi Grafik & Smart Snapping</strong></li>
+                                <li class="mb-2"><strong>Solver Otomatis 5 Metode Lengkap</strong></li>
+                                <li class="mb-2"><strong>Simulasi Fisika & Optimasi Bisnis</strong></li>
+                                <li><strong>Latihan Soal, Kuis & Siap Offline (PWA)</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn fw-bold rounded-pill py-2" style="font-size: 0.85rem; border-color: #fd7e14; color: #fd7e14;" data-bs-toggle="modal" data-bs-target="#modalKuadrat" onmouseover="this.style.backgroundColor='#fd7e14'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#fd7e14';">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://sim-kuadrat.md-innovate.my.id" target="_blank" class="btn fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem; background-color: #fd7e14; color: white;">
+                                <i class="fas fa-external-link-alt me-2"></i>Akses Simulasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 7: LinearLab (Simulasi Fungsi Linier) -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="logo_simulasi.png" alt="Logo LinearLab" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">LinearLab</h4>
+                            <span class="badge px-3 py-2 rounded-pill" style="background-color: #0d9488; color: white;"><i class="fas fa-ruler-combined me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Media interaktif fungsi linier dan persamaan garis lurus SMP. Dilengkapi grafik Kartesius real-time, solver SPLDV bertahap, dan ekspor PDF.
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#Matematika</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem; color: #0d9488 !important;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>Grafik Real-Time & Snap Magnetik</strong></li>
+                                <li class="mb-2"><strong>Solver Aljabar & SPLDV Bertahap</strong></li>
+                                <li class="mb-2"><strong>5 Bab Materi & Ekspor Modul PDF</strong></li>
+                                <li><strong>Kuis Interaktif, Web Audio & Dark Mode</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn fw-bold rounded-pill py-2" style="font-size: 0.85rem; border-color: #0d9488; color: #0d9488;" data-bs-toggle="modal" data-bs-target="#modalLinear" onmouseover="this.style.backgroundColor='#0d9488'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#0d9488';">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://sim-linearlab.md-innovate.my.id" target="_blank" class="btn fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem; background-color: #0d9488; color: white;">
+                                <i class="fas fa-external-link-alt me-2"></i>Akses Simulasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 8: Air Force 1945 -->
             <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp game">
                 <div class="card app-card h-100 border-0 bg-white">
                     <div class="card-body p-4 d-flex flex-column">
@@ -507,7 +589,140 @@
       </div>
     </div>
 
-    <!-- MODAL 4: DESKRIPSI PENUH GIM AIR FORCE 1945 (BARU) -->
+    <!-- MODAL 4: DESKRIPSI PENUH SIMKUADRAT INTERAKTIF (BARU) -->
+    <div class="modal fade" id="modalKuadrat" tabindex="-1" aria-labelledby="modalKuadratLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header text-white border-0" style="background-color: #fd7e14;">
+            <h5 class="modal-title fw-bold" id="modalKuadratLabel"><i class="fas fa-chart-line me-2"></i>Fitur Lengkap SimKuadrat Interaktif</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">
+                <strong>"Eksplorasi Konsep, Visualisasikan Parabola, dan Pahami Matematika Kuadrat Secara Interaktif & Mandiri."</strong><br>
+                Media pembelajaran digital berbasis web untuk membantu siswa SMP, SMA, dan pengajar memahami fungsi serta persamaan kuadrat secara visual, intuitif, dan mendalam.
+            </p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #fd7e14;">1. Visualisasi Grafik Interaktif & Smart Snapping</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Manipulasi Parameter Real-Time:</strong> Geser nilai koefisien <em>a, b,</em> dan <em>c</em> dengan slider untuk melihat transformasi grafik parabola secara instan.</li>
+                    <li><strong>Smart Coordinate Snapping:</strong> Kursor otomatis menempel pada titik krusial: Titik Puncak/Balik (Maksimum/Minimum), Titik Potong Sumbu X (akar-akar persamaan), dan Titik Potong Sumbu Y.</li>
+                    <li><strong>Panel Karakteristik Otomatis:</strong> Inspeksi langsung nilai Diskriminan (D), sumbu simetri, bentuk kuadrat sempurna (Vertex Form), hingga status definit kurva.</li>
+                    <li><strong>Navigasi Bidang Bebas:</strong> Fitur zoom in/out, geser kanvas (pan), dan tombol Auto-Fit ke titik puncak.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #fd7e14;">2. Solver Otomatis Langkah Demi Langkah</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>5 Metode Penyelesaian Lengkap:</strong> Rumus Kuadratik (Rumus ABC), Metode Pemfaktoran, Melengkapkan Kuadrat Sempurna, Titik Puncak & Sumbu Simetri, serta Analisis Diskriminan.</li>
+                    <li><strong>Tipografi Matematika Standar (KaTeX):</strong> Rumus disajikan rapi dengan format pecahan asli dan lambang akar proporsional, dilengkapi tombol salin pembahasan satu klik.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #fd7e14;">3. Materi Konsep & Simulasi Nyata di Kehidupan Sehari-hari</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Modul Anatomi Parabola:</strong> Eksplorasi peran masing-masing koefisien dalam membentuk kurva.</li>
+                    <li><strong>Simulasi Gerak Parabola (Bola Basket & Fisika):</strong> Atur sudut elevasi dan kecepatan awal lemparan, amati lintasan bola menuju ring, dan hitung tinggi maksimum serta waktu terbang.</li>
+                    <li><strong>Simulasi Optimasi Bisnis & Jembatan Gantung:</strong> Temukan produksi ideal untuk keuntungan maksimal melalui titik balik parabola serta analisis ketinggian kabel jembatan suspensi.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #fd7e14;">4. Latihan Soal Mandiri & Kuis Teruji</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Mode Latihan Santai:</strong> Soal bertahap (Dasar, Menengah, Lanjut, dan Soal Cerita) dilengkapi petunjuk (hint), koreksi instan, dan pembahasan tuntas.</li>
+                    <li><strong>Mode Uji Kemampuan (Kuis):</strong> Dilengkapi batas waktu, indikator perkembangan, skor persentase, predikat capaian (Master Kuadrat), dan efek konfeti.</li>
+                </ul>
+            </div>
+
+            <div class="mb-0">
+                <h6 class="fw-bold" style="color: #fd7e14;">5. Audio Interaktif, Dark Mode & Siap Offline (PWA)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Web Audio API:</strong> Efek suara interaktif saat menjawab soal, snapping titik puncak/akar, dan animasi (dilengkapi tombol Mute/Unmute).</li>
+                    <li><strong>Desain Responsif & PWA:</strong> Mendukung tema gelap (Dark Mode), ramah layar sentuh HP/Tablet/IFP, dan dapat dipasang untuk akses 100% tanpa internet.</li>
+                </ul>
+            </div>
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://sim-kuadrat.md-innovate.my.id" target="_blank" class="btn rounded-pill px-4 fw-bold shadow-sm" style="background-color: #fd7e14; color: white;">
+                <i class="fas fa-external-link-alt me-2"></i>Akses SimKuadrat
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 5: DESKRIPSI PENUH LINEARLAB (BARU) -->
+    <div class="modal fade" id="modalLinear" tabindex="-1" aria-labelledby="modalLinearLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header text-white border-0" style="background-color: #0d9488;">
+            <h5 class="modal-title fw-bold" id="modalLinearLabel"><i class="fas fa-ruler-combined me-2"></i>Fitur Lengkap LinearLab (Fungsi Linier SMP)</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">
+                <strong>"Pahami Konsep Garis Lurus Lebih Cepat dengan Visualisasi Real-Time, Solver Langkah demi Langkah, dan Kuis Interaktif."</strong><br>
+                Platform media pembelajaran matematika interaktif berbasis web untuk siswa SMP yang mempelajari fungsi linier dan persamaan garis lurus sesuai standar kurikulum.
+            </p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #0d9488;">1. Laboratorium Grafik Kartesius Interaktif (Interactive Sandbox)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Slider Parameter Real-Time:</strong> Kendali penuh mengubah nilai gradien (<em>m</em>) dan titik potong sumbu Y (<em>c</em>) dengan pergerakan garis yang halus.</li>
+                    <li><strong>Fitur Snap Magnetik Koordinat:</strong> Kursor atau sentuhan jari otomatis mengunci pada titik potong sumbu X, sumbu Y, pusat koordinat, dan titik bulat sepanjang garis.</li>
+                    <li><strong>Segitiga Gradien & Uji Hubungan Dua Garis:</strong> Visualisasi rasio perubahan vertikal terhadap horizontal (&Delta;y/&Delta;x) serta analisis dua garis sejajar atau tegak lurus.</li>
+                    <li><strong>Pelacak Titik Sembarang (Coordinate Tracer):</strong> Menelusuri titik koordinat manapun pada garis lengkap dengan proyeksi sumbu X dan Y.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #0d9488;">2. Kalkulator & Solver Langkah demi Langkah Aljabar</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Hitung Nilai Fungsi & Invers Aljabar:</strong> Panduan substitusi nilai input <em>x</em> serta pemindahan ruas PLSV untuk mencari nilai masukan jika <em>f(x)</em> diketahui.</li>
+                    <li><strong>Persamaan dari Dua Titik (2 Metode):</strong> Penjabaran lengkap menggunakan Metode Rumus Gradien maupun Metode SPLDV (Eliminasi & Substitusi).</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #0d9488;">3. Modul Materi Terstruktur (5 Bab) & Ekspor Dokumen PDF</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>5 Bab Pembelajaran SMP:</strong> Bentuk umum fungsi linier, konsep gradien, menghitung nilai fungsi, menentukan nilai <em>x</em> (invers), hingga menyusun rumus fungsi dari dua titik.</li>
+                    <li><strong>Ekspor PDF Siap Cetak:</strong> Unduh lembar analisis grafik beresolusi tinggi, modul materi per bab, buku saku panduan lengkap, hingga sertifikat rapor hasil kuis.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #0d9488;">4. Mode Latihan Soal Interaktif & Sistem Skor</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Bank Soal Variatif:</strong> Tingkat kesulitan Mudah, Sedang, hingga Soal Tantangan dan soal cerita terapan, dilengkapi bantuan (hint) dan pembahasan detail.</li>
+                    <li><strong>Dashboard Pelacak Progres:</strong> Mencatat persentase bab yang tuntas dipelajari, riwayat skor latihan, dan lencana kemahiran belajar.</li>
+                </ul>
+            </div>
+
+            <div class="mb-0">
+                <h6 class="fw-bold" style="color: #0d9488;">5. Desain Modern, Aksesibilitas & Efek Suara (Web Audio)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li><strong>Notasi Pecahan Vertikal & Dark Mode:</strong> Tampilan rumus pecahan bertingkat yang mudah dibaca dengan pilihan mode terang dan gelap.</li>
+                    <li><strong>Efek Suara Prosedural:</strong> Dilengkapi umpan balik suara saat kuis, klik magnetik koordinat, serta sonifikasi nada garis mengikuti tinggi koordinat.</li>
+                </ul>
+            </div>
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://sim-linearlab.md-innovate.my.id" target="_blank" class="btn rounded-pill px-4 fw-bold shadow-sm" style="background-color: #0d9488; color: white;">
+                <i class="fas fa-external-link-alt me-2"></i>Akses LinearLab
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 6: DESKRIPSI PENUH GIM AIR FORCE 1945 -->
     <div class="modal fade" id="modalAirForce" tabindex="-1" aria-labelledby="modalAirForceLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 rounded-4 shadow-lg">
