@@ -18,7 +18,7 @@
         .btn-wa:hover { background-color: #128C7E; color: white; }
         .app-logo { width: 90px; height: 90px; object-fit: cover; }
         .brand-logo { height: 45px; object-fit: contain; background: white; padding: 2px; border-radius: 5px; }
-        .tag-badge { font-size: 0.75rem; background-color: #e9ecef; color: #6c757d; border: 1px solid #dee2e6; }
+        .tag-badge { font-size: 0.75rem; background-color: #e9ecef; color: #6c757d; border: 1px solid #dee2e6; margin-bottom: 4px; display: inline-block; }
     </style>
 </head>
 <body>
@@ -344,7 +344,51 @@
                 </div>
             </div>
 
-            <!-- App 8: Air Force 1945 -->
+            <!-- App 8: Lingkar Pintar (Simulasi Lingkaran) -->
+            <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp matematika sd smp pwa">
+                <div class="card app-card h-100 border-0 bg-white">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="text-center mb-4">
+                            <img src="logo_simulasi.png" alt="Logo Lingkar Pintar" class="app-logo mb-3 rounded-circle shadow-sm">
+                            <h4 class="card-title fw-bold text-dark">Lingkar Pintar</h4>
+                            <span class="badge px-3 py-2 rounded-pill" style="background-color: #e83e8c; color: white;"><i class="fas fa-circle-notch me-1"></i>Web Based</span>
+                        </div>
+                        <p class="card-text text-muted text-center mb-3" style="font-size: 0.95rem;">
+                            Media pembelajaran interaktif SD & SMP untuk mengeksplorasi unsur, rumus, dan konsep geometri lingkaran secara visual dan menyenangkan.
+                        </p>
+                        <!-- Visual Tags -->
+                        <div class="text-center mb-4">
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#IFP</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#PWA</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#WebApp</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#Matematika</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1 me-1">#SD</span>
+                            <span class="badge tag-badge rounded-pill px-2 py-1">#SMP</span>
+                        </div>
+                        
+                        <div class="bg-light p-3 rounded-4 mb-4 flex-grow-1">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem; color: #e83e8c !important;">Highlight Fitur:</h6>
+                            <ul class="text-start text-muted mb-0" style="font-size: 0.85rem; padding-left: 1rem;">
+                                <li class="mb-2"><strong>8 Unsur Lingkaran Interaktif</strong></li>
+                                <li class="mb-2"><strong>Sudut Pusat, Keliling & Lab Pi</strong></li>
+                                <li class="mb-2"><strong>Kalkulator Rumus & Pembahasan</strong></li>
+                                <li><strong>Gamifikasi, Lencana & Kuis Kelas</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-auto d-grid gap-2">
+                            <button class="btn fw-bold rounded-pill py-2" style="font-size: 0.85rem; border-color: #e83e8c; color: #e83e8c;" data-bs-toggle="modal" data-bs-target="#modalLingkaran" onmouseover="this.style.backgroundColor='#e83e8c'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e83e8c';">
+                                <i class="fas fa-list me-2"></i>Detail Fitur
+                            </button>
+                            <a href="https://sim-lingkaran.md-innovate.my.id/" target="_blank" class="btn fw-bold rounded-pill py-2 shadow-sm" style="font-size: 0.85rem; background-color: #e83e8c; color: white;">
+                                <i class="fas fa-external-link-alt me-2"></i>Akses Simulasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App 9: Air Force 1945 -->
             <div class="col-lg-4 col-md-6 app-item" data-tags="web ifp game">
                 <div class="card app-card h-100 border-0 bg-white">
                     <div class="card-body p-4 d-flex flex-column">
@@ -589,7 +633,7 @@
       </div>
     </div>
 
-    <!-- MODAL 4: DESKRIPSI PENUH SIMKUADRAT INTERAKTIF (BARU) -->
+    <!-- MODAL 4: DESKRIPSI PENUH SIMKUADRAT INTERAKTIF -->
     <div class="modal fade" id="modalKuadrat" tabindex="-1" aria-labelledby="modalKuadratLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 rounded-4 shadow-lg">
@@ -656,7 +700,7 @@
       </div>
     </div>
 
-    <!-- MODAL 5: DESKRIPSI PENUH LINEARLAB (BARU) -->
+    <!-- MODAL 5: DESKRIPSI PENUH LINEARLAB -->
     <div class="modal fade" id="modalLinear" tabindex="-1" aria-labelledby="modalLinearLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 rounded-4 shadow-lg">
@@ -722,7 +766,74 @@
       </div>
     </div>
 
-    <!-- MODAL 6: DESKRIPSI PENUH GIM AIR FORCE 1945 -->
+    <!-- MODAL 6: DESKRIPSI PENUH LINGKAR PINTAR (BARU) -->
+    <div class="modal fade" id="modalLingkaran" tabindex="-1" aria-labelledby="modalLingkaranLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header text-white border-0" style="background-color: #e83e8c;">
+            <h5 class="modal-title fw-bold" id="modalLingkaranLabel"><i class="fas fa-circle-notch me-2"></i>Fitur Lengkap Lingkar Pintar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <p class="text-muted mb-4">
+                <strong>Lingkar Pintar</strong> adalah aplikasi web edukasi matematika interaktif yang dirancang untuk membantu siswa jenjang SD dan SMP memahami konsep geometri lingkaran secara visual, intuitif, dan menyenangkan melalui simulasi langsung, visualisasi pecahan bertumpuk, latihan soal bertingkat, serta gamifikasi.
+            </p>
+            
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #e83e8c;">1. Definisi & 8 Unsur Lingkaran Interaktif</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Penjelasan materi definisi lingkaran secara visual (kumpulan titik-titik berjarak sama terhadap titik tertentu).</li>
+                    <li>Laboratorium visual rotasi jari-jari 360°.</li>
+                    <li>Eksplorasi 8 unsur lengkap (Titik Pusat, Jari-jari, Diameter, Busur, Tali Busur, Juring, Tembereng, dan Apotema) dengan warna dinamis.</li>
+                    <li>Animasi interaktif penemuan rumus luas lingkaran.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #e83e8c;">2. Sudut Pusat, Sudut Keliling & Hubungan Perbandingan</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Eksplorasi dinamis hubungan sudut pusat dan sudut keliling yang menghadap busur sama.</li>
+                    <li>Simulasi perbandingan dua sudut pusat terhadap dua panjang busur dan dua luas juring dilengkapi notasi pecahan vertikal rapi.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #e83e8c;">3. Lab Penemuan Nilai Pi & Kalkulator Rumus Cerdas</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Simulasi menggelindingkan berbagai lingkaran benda nyata untuk membuktikan perbandingan keliling terhadap diameter (&pi; = 22/7 atau 3.14).</li>
+                    <li>Perhitungan instan jari-jari, diameter, keliling, luas, panjang busur, luas juring, dan tembereng.</li>
+                    <li>Menampilkan tahapan penjabaran rumus langkah demi langkah secara terstruktur.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="fw-bold" style="color: #e83e8c;">4. Latihan Bertingkat, Kuis Kelas & Gamifikasi</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Kumpulan soal cerita kontekstual Indonesia dengan 3 tingkat kesulitan (Dasar SD, Menengah SMP, dan Mahir) dengan umpan balik langsung.</li>
+                    <li>Mode kuis interaktif kelas dengan timer, skor instan, kunci pembahasan, dan Papan Peringkat (Leaderboard).</li>
+                    <li>Sistem perolehan XP, kenaikan level siswa, koleksi lencana (badges), dan cetak kartu sertifikat hasil belajar.</li>
+                </ul>
+            </div>
+
+            <div class="mb-0">
+                <h6 class="fw-bold" style="color: #e83e8c;">5. Aksesibilitas Modern (PWA & Siap Offline)</h6>
+                <ul class="text-muted" style="font-size: 0.95rem;">
+                    <li>Dapat diinstal di HP/komputer (Progressive Web App).</li>
+                    <li>Dilengkapi mode offline, efek suara edukatif, dan tampilan ramah mode gelap (Dark Mode).</li>
+                </ul>
+            </div>
+          </div>
+          <div class="modal-footer bg-light border-0">
+            <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://sim-lingkaran.md-innovate.my.id/" target="_blank" class="btn rounded-pill px-4 fw-bold shadow-sm" style="background-color: #e83e8c; color: white;">
+                <i class="fas fa-external-link-alt me-2"></i>Akses Lingkar Pintar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 7: DESKRIPSI PENUH GIM AIR FORCE 1945 -->
     <div class="modal fade" id="modalAirForce" tabindex="-1" aria-labelledby="modalAirForceLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 rounded-4 shadow-lg">
