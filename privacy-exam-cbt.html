@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi — Exam-CBT</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 36px 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+            border: 1px solid #e2e8f0;
+        }
+        h1 {
+            color: #1e3a8a;
+            margin-top: 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #1d4ed8;
+            font-size: 1.2rem;
+            margin-top: 28px;
+        }
+        .meta {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 14px 16px;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        footer {
+            margin-top: 36px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #64748b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kebijakan Privasi — Exam-CBT</h1>
+        <p class="meta"><strong>Terakhir diperbarui:</strong> 20 November 2026</p>
+
+        <p>
+            Kebijakan Privasi ini menjelaskan bagaimana aplikasi <strong>Exam-CBT</strong> (dikembangkan oleh <strong>MD Innovate</strong>) mengumpulkan, menggunakan, dan melindungi informasi pengguna. Dengan menggunakan aplikasi Exam-CBT, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini.
+        </p>
+
+        <h2>1. Informasi yang Kami Kumpulkan</h2>
+        <p>Aplikasi Exam-CBT tidak menyediakan fitur pendaftaran akun mandiri bagi siswa. Seluruh data peserta dan pelaksanaan ujian dikelola oleh guru atau penyelenggara ujian. Data yang diproses melalui aplikasi meliputi:</p>
+        <ul>
+            <li><strong>Data Identitas Peserta:</strong> Nama lengkap, NIS/NISN (jika menggunakan mode Login Peserta), asal sekolah, kelas, nomor absen, ruang ujian, dan nomor peserta.</li>
+            <li><strong>Data Hasil Ujian:</strong> Kode sinkronisasi ujian, mata pelajaran, jawaban soal, skor/nilai, dan durasi pengerjaan ujian.</li>
+            <li><strong>Data Teknis &amp; Diagnostik (Layanan Pihak Ketiga):</strong> Informasi teknis terbatas seperti perkiraan lokasi (berdasarkan alamat IP), interaksi aplikasi, log kerusakan (<em>crash logs</em>), diagnostik performa, dan pengenal perangkat non-iklan (<em>App Set ID</em>) yang diproses secara otomatis oleh SDK layanan pihak ketiga.</li>
+        </ul>
+
+        <h2>2. Penggunaan Informasi</h2>
+        <p>Data yang dikumpulkan hanya digunakan untuk:</p>
+        <ul>
+            <li>Memverifikasi akses peserta terhadap paket soal ujian yang dibuat oleh guru.</li>
+            <li>Mengirimkan hasil jawaban dan skor ujian ke database guru penyelenggara melalui layanan backend <strong>Supabase</strong>.</li>
+            <li>Menyimpan progres jawaban secara sementara di penyimpanan lokal perangkat (<em>auto-save</em>) agar jawaban tidak hilang sebelum terkirim.</li>
+            <li>Menjaga stabilitas aplikasi dan menayangkan iklan banner non-personal yang aman di luar sesi pengerjaan ujian.</li>
+        </ul>
+
+        <h2>3. Layanan Pihak Ketiga &amp; Iklan Ramah Anak</h2>
+        <p>Aplikasi Exam-CBT menggunakan layanan pihak ketiga berikut:</p>
+        <ul>
+            <li><strong>Supabase</strong> (<a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>): Digunakan sebagai infrastruktur server terenkripsi (HTTPS) untuk sinkronisasi soal, verifikasi status ujian, dan penyimpanan jawaban siswa.</li>
+            <li><strong>Google AdMob</strong> (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>): Digunakan untuk menayangkan iklan banner hanya pada halaman sebelum dan sesudah ujian (iklan tidak pernah ditampilkan saat siswa sedang mengerjakan soal).</li>
+        </ul>
+
+        <div class="box">
+            <strong>Komitmen Kebijakan Keluarga Google Play (Families Policy):</strong>
+            <ul>
+                <li>Aplikasi ini <strong>tidak</strong> mengakses atau mengumpulkan ID Iklan Google (<em>Google Advertising ID / AD_ID</em>).</li>
+                <li>Seluruh permintaan iklan ditandai dengan perlakuan khusus anak (<em>Child-Directed Treatment</em>) dan dibatasi pada konten dengan rating <strong>G (Semua Umur)</strong>.</li>
+                <li>Iklan yang ditampilkan bersifat non-personal (tidak melacak perilaku lintas aplikasi maupun menayangkan iklan berbasis minat).</li>
+            </ul>
+        </div>
+
+        <h2>4. Penyimpanan Lokal &amp; Keamanan Data</h2>
+        <ul>
+            <li>Seluruh pengiriman data antara aplikasi dan server dienkripsi selama transmisi menggunakan protokol <strong>HTTPS/TLS</strong>, serta naskah soal diamankan dengan enkripsi <strong>AES</strong>.</li>
+            <li>Fitur <strong>"Simpan Gambar Bukti Nilai"</strong> menyimpan berkas gambar hasil ujian secara lokal ke folder Galeri (<code>Pictures/ExamCBT</code>) pada perangkat pengguna atas tindakan langsung dari pengguna.</li>
+            <li>Data sementara soal dan <em>auto-save</em> jawaban pada perangkat akan dihapus secara otomatis setelah jawaban berhasil dikirimkan ke server.</li>
+        </ul>
+
+        <h2>5. Privasi Anak</h2>
+        <p>
+            Exam-CBT dirancang agar aman digunakan oleh pelajar di berbagai jenjang pendidikan, termasuk siswa di bawah usia 13 tahun di bawah pengawasan guru atau orang tua. Kami tidak secara sengaja mengumpulkan informasi pribadi sensitif di luar kebutuhan administrasi ujian sekolah, dan kami tidak menjual data pengguna kepada pihak mana pun.
+        </p>
+
+        <h2>6. Retensi &amp; Permintaan Penghapusan Data</h2>
+        <p>
+            Data hasil ujian tersimpan di server sesuai kebutuhan evaluasi guru atau sekolah penyelenggara. Guru dapat menghapus data ujian atau peserta secara langsung melalui Portal Guru. Orang tua, siswa, atau pihak sekolah juga dapat mengajukan permintaan penghapusan data hasil ujian kapan saja dengan menghubungi pengembang melalui alamat email di bawah ini dengan menyertakan <strong>Nama Peserta</strong>, <strong>Asal Sekolah</strong>, dan <strong>Kode Ujian</strong>. Permintaan akan diproses maksimal dalam 7 hari kerja.
+        </p>
+
+        <h2>7. Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini atau ingin mengajukan permintaan penghapusan data, silakan hubungi kami:</p>
+        <ul>
+            <li><strong>Pengembang:</strong> MD Innovate</li>
+            <li><strong>Situs Web:</strong> <a href="https://md-innovate.my.id">https://md-innovate.my.id</a></li>
+            <li><strong>Email:</strong> <a href="mailto:[mdprast@gmail.com]">[mdprast@gmail.com]</a></li>
+        </ul>
+
+        <footer>
+            &copy; 2026 MD Innovate — Exam-CBT. Seluruh hak cipta dilindungi.
+        </footer>
+    </div>
+</body>
+</html>
